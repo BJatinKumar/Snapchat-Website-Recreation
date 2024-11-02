@@ -1,0 +1,270 @@
+body {
+    background: #fffc00;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search-flex {
+    display: flex;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 15px;
+}
+h1 {
+    font-size: 70px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.body-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left:160px;
+}
+input {
+    background-color: #fffc00;
+    border: none;
+    outline: none;
+}
+.middle-section {
+  gap: 10px;
+}
+
+.left-section,
+.middle-section,
+.right-section {
+    display: flex;
+    align-items: center;
+   
+}
+
+
+          button {
+              background-color: black;
+              color: white;
+              height: 30px;
+              border-radius: 15px;
+              padding-left: 10px;
+              padding-right: 10px;
+              margin-left:10px ;
+              margin-right:10px ;
+          }
+
+  .icon-flex:hover {
+    background-color: rgb(224, 224, 17);
+    cursor: pointer;
+  }
+
+.icon-flex {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+padding: 3px 5px 3px 5px;
+border-radius: 12.5px;
+font-family: 'Nunito Sans', sans-serif;
+}
+  .ads:hover,
+  .download:hover {
+background-color: white;
+cursor: pointer;
+color: black;
+
+  }
+  .menu {
+    margin-right: 10px;
+}
+  .icon {
+    margin-left: 15px;
+    margin-right: 15px;
+
+  }
+
+  .menu:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+ 
+  .button {
+    background-color: rgb(0, 225, 255); /* Green background color */
+    border: none; /* No border */
+    color: white; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    margin-left: 0;
+    animation: 1s linear 5s forwards infinite changeColor;
+  }
+
+  @keyframes changeColor {
+    0% { 
+      background-color: rgb(0, 225, 225);
+    }
+    25% {
+      background-color: blue;
+    }
+    50% {
+      background-color: black;
+    }
+
+    75% {
+      background-color: rgb(216, 80, 80);
+    }
+    100% {
+      background-color: rgb(0, 225, 225);
+    }
+  }
+  
+
+
+  .text-1 {
+    display: flex;
+    align-items: center;
+    max-width: 435px;
+    min-height: 258px;
+    font-size: 64px;
+    line-height: 86px;
+  }
+.text-2 {
+    display: flex;
+    align-items: center;
+    max-width: 427px;
+    min-height: 60px;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+.text-3 {
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    max-width: 427px;
+    min-height: 60px;
+    font-size: 24px;
+    line-height: 30px;
+}
+    
+.login-flex {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.login {
+   width: 180px; 
+   border-radius: 30px;
+}
+.get-ms {
+  display: flex;
+   flex-direction: column;  
+   justify-content: flex-start; /* Aligns items to the left */
+   align-items: flex-start; /* Aligns items to the top */
+}
+.get {
+  font-size: 10px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.ms {
+font-size: 14px;
+font-weight: 700;
+color: white;
+
+}
+.micro-flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.down-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+.or{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+.microsoft {
+  border-radius: 7px;
+}
+
+/* Reset default margin and padding for body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the image container */
+.avatar {
+  position: absolute; /* Positioning context */
+  top: 50%;          /* Place the top of the container at the vertical center */
+  right: 15%;          /* Align the right edge of the container with the right edge of the page */
+  transform: translateY(-50%);
+  max-width: 666px; /* Center the container vertically */
+}
+
+/* Style for the image */
+img {
+  max-width: 100%; /* Make sure the image doesn't exceed its container */
+  height: auto;    /* Maintain aspect ratio */
+}
+
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  position: sticky;
+  bottom: 0;
+  margin-top: 10px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.login:hover,
+.microsoft:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1415px) {
+      .avatar {
+        display: none;
+      }
+}
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+  }
+  
+  .left-section,
+  .middle-section,
+  .right-section {
+      border-top: 1px solid white;
+      padding: 10px;
+  }
+
+  .body-flex {
+    margin-left: 10%;
+    width: 50%;
+    margin-top: 0px;
+    font-size: 24px;
+    padding: 0;
+    
+  }
+
+  .down-buttons {
+    margin-left: 10%;
+    width: 50%;
+    padding: 1px;
+    flex-direction: column;
+  }
+    
+}
